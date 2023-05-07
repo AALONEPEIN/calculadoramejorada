@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+   <link rel="stylesheet" type="text/css"href="style.css">
+</head>
+<body>
+    <H1 > CALCULADORA</H1>
+    <div class="calculator">
+        <button id="change-color" onclick="changeColor()">cambiar tema</button>
+        <input type="text" id="display" readonly>
+<!-- crea el espacio en blanco para datos y sele agrega el identificador display para javascript-->
+        <div class="pta">
+        <input type="button" value="1" onclick="addToDisplay(1)">
+        <input type="button" value="2" onclick="addToDisplay(2)">
+        <input type="button" value="3" onclick="addToDisplay(3)">
+        <input type="button" value="*" onclick="addToDisplay('*')">
+    </div>
+    <div class="pta">
+        <input type="button" value="4" onclick="addToDisplay(4)">
+        <input type="button" value="5" onclick="addToDisplay(5)">
+        <input type="button" value="6" onclick="addToDisplay(6)">
+        <input type="button" value="-" onclick="addToDisplay('-')">
+    </div>
+        <input type="button" value="7" onclick="addToDisplay(7)">
+        <input type="button" value="8" onclick="addToDisplay(8)">
+        <input type="button" value="9" onclick="addToDisplay(9)">
+        <input type="button" value="+" onclick="addToDisplay('+')">
+   <div class="pta"> 
+        <input type="button" value="C" onclick="clearDisplay()">
+        <input type="button" value="0" onclick="addToDisplay(0)">
+        <input type="button" value="D" onclick="clearLastCharacter()">
+        <input type="button" value="/" onclick="addToDisplay('/')">
+        
+  
+        
+    </div>
+   
+    <input type="button" value="=" onclick="calculate()">
+    <input type="button" value="." onclick="addToDisplay('.')">
+       
+  
+        
+        </div>
+    
+    
+    <script src="./java.js"></script>
+
+</body>
+</html>
